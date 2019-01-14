@@ -79,8 +79,8 @@
         <td>row #5 col2</td>
     </tr>
     <tr>
-        <td>row #6 col1</td>
-        <td>row #6 col2</td>
+        <td>row #6 aaaaa</td>
+        <td>row #6 aaaaaaaa</td>
     </tr>
     <tr>
         <td>row #7 col1</td>
