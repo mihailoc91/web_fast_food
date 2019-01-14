@@ -1,0 +1,10 @@
+com\fastfood\web\configuration\SecurityWebInitializer.class
+com\fastfood\web\controller\zaposleni\ZaposleniController.class
+com\fastfood\web\model\beans\Zaposleni.class
+com\fastfood\web\configuration\SpringWebAppInitializer.class
+com\fastfood\web\configuration\ApplicationContextConfig.class
+com\fastfood\web\model\dao\ZaposleniDAO.class
+com\fastfood\web\model\dao\impl\ZaposleniDAOImpl.class
+com\fastfood\web\services\ZaposleniService.class
+com\fastfood\web\configuration\SecurityConfig.class
+com\fastfood\web\controller\WelcomeController.class
