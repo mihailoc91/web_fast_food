@@ -33,24 +33,27 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
     
  
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception{
-//        http.formLogin().and().
-//                authorizeRequests()
-//                .antMatchers("/zaposleni").hasRole("RADNIK")
-//                .antMatchers("/zaposleni/**").hasRole("MENADZER")
-////                .antMatchers("/zaposleni").access("hasRole('RADNIK') or hasRole('MENADZER')")
-////                .antMatchers("/zaposleni/**").hasRole("MENADZER")
-//                .anyRequest().permitAll();
-//    }
+
     
      @Override
     protected void configure(HttpSecurity http) throws Exception{
-        http.formLogin().and()
+        http
+                .formLogin()
+                    .loginPage("/login").defaultSuccessUrl("/zaposleni")
+                .and()
+                .rememberMe()
+                    .tokenValiditySeconds(2419200)
+                    .key("fastKey")
+                .and()
+                .logout()
+                    .logoutSuccessUrl("/")
+                    .logoutUrl("/signout")
+                .and()
                 .authorizeRequests()
-                .antMatchers("/zaposleni").hasAnyRole("RADNIK","MENADZER")
-                .antMatchers("/zaposleni/**").hasRole("MENADZER")
-                .anyRequest().permitAll();
+                    .antMatchers("/zaposleni").hasAnyRole("RADNIK","MENADZER")
+                    .antMatchers("/zaposleni/**").hasRole("MENADZER")
+                    .anyRequest().permitAll();
+                
     }
  
 }

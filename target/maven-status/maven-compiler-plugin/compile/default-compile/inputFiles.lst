@@ -1,6 +1,7 @@
 E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\configuration\SecurityConfig.java
 E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\controller\WelcomeController.java
 E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\services\ZaposleniService.java
+E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\controller\LoginController.java
 E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\model\dao\ZaposleniDAO.java
 E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\controller\zaposleni\ZaposleniController.java
 E:\Document\ITA\Primeri - vezbanja- JAVA\web_fast_food_v2\src\main\java\com\fastfood\web\model\beans\Zaposleni.java

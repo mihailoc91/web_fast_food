@@ -1,5 +1,6 @@
 com\fastfood\web\configuration\SecurityWebInitializer.class
 com\fastfood\web\controller\zaposleni\ZaposleniController.class
+com\fastfood\web\controller\LoginController.class
 com\fastfood\web\model\beans\Zaposleni.class
 com\fastfood\web\configuration\SpringWebAppInitializer.class
 com\fastfood\web\configuration\ApplicationContextConfig.class
