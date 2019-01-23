@@ -11,6 +11,8 @@ import com.fastfood.web.services.ZaposleniService;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.access.prepost.PreFilter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -51,11 +53,13 @@ public class ZaposleniController {
      * @param id - the id of chosen Zaposleni
      * @return page zaposleni/update
      */
+    
     @RequestMapping(value = "/zaposleni/update" , method = RequestMethod.GET)
     public String updateZaposleni(ModelMap model, @RequestParam int id ){
         Zaposleni zaposleni = zaposleniDao.getZaposleni(id);
         model.addAttribute("zaposleni", zaposleni);
         return "zaposleni/update";
+       
     }
     
     /**

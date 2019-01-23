@@ -24,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     DataSource dataSource;
 
-    @Override
+    @Override 
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication().dataSource(dataSource).usersByUsernameQuery("SELECT ime, lozinka, true FROM zaposleni WHERE ime=? AND tip_zaposlenog=2").
                 authoritiesByUsernameQuery("SELECT ime, 'ROLE_MENADZER' from zaposleni where ime=?").and()
